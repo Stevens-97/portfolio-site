@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -11,13 +11,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Welcome to my personal site!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          My name is Elliott Stevens and I am a software engineer. <br></br>
+          {"Here is some of my work."}
         </p>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
