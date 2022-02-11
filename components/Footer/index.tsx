@@ -1,9 +1,9 @@
-import css from "./Footer.module.css";
+import "./Footer.scss";
 
 export default function Footer() {
   return (
     <>
-      <footer className={css.footer}>
+      <footer className={"footer"}>
         Made with{" "}
         <img src="/netliheart.svg" alt="Netlify Logo" className={css.logo} />{" "}
         for you
