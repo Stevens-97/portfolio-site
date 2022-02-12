@@ -2,24 +2,8 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import css from "../styles/home.module.scss";
-import { createClient } from "contentful";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    async function getData(id, key) {
-      const client = createClient({
-        space: id,
-        accessToken: key,
-      });
-
-      const res = await client.getEntries({ content_type: "workExample" });
-      setData(res);
-    }
-    getData(process.env.CONTENTFUL_SPACE_ID, process.env.CONTENTFUL_ACCESS_KEY);
-  }, []);
-  console.log(process.env.workExample);
   return (
     <div className={css.container}>
       <Head>
