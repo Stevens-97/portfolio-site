@@ -1,5 +1,9 @@
 # Project: Portfolio site
 
+**URL for currently deployed site**
+
+> [Site link](https://sharp-lewin-b674fc.netlify.app/)
+
 ## Getting started
 
 Installing dependencies
@@ -24,8 +28,4 @@ Starting local environment
 
 ![Props and state diagram](./planning/images/InitialLowWireframe.jpg)
 
-## Extra information/links
-
-**URL for currently deployed site**
-
-> [Site link](https://sharp-lewin-b674fc.netlify.app/)
+## What I learnt
