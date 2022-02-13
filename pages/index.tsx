@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import css from "../styles/home.module.scss";
+import ProjectPortfolio from "../components/ProjectPortfolio";
+import AboutMe from "../components/AboutMe";
 
 export default function Home() {
   return (
@@ -11,14 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <AboutMe />
         <div>
-          <Header title="Welcome to my personal site!" />
-          <p className="description">
-            My name is Elliott Stevens and I am a software engineer. <br></br>
-            {"Here is some of my work."}
-          </p>
+          <ProjectPortfolio />
         </div>
-        <div></div>
       </main>
       <Footer />
     </div>
