@@ -13,10 +13,12 @@ export default function Home() {
       </Head>
       <main>
         <AboutMe />
+        <span className="section-break"></span>
         <div>
           <ProjectPortfolio />
         </div>
       </main>
+      <span className="section-break"></span>
       <Footer />
     </div>
   );

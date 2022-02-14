@@ -1,8 +1,5 @@
 import { DataStructure } from "../../libs/data";
-
-interface ProjectProps {
-  value: DataStructure;
-}
+import { useInView } from "react-intersection-observer";
 
 export default function Project({
   project,
@@ -11,21 +8,28 @@ export default function Project({
   tech,
   text,
 }: DataStructure) {
-  return (
-    <div className="project">
-      <div className="project-title">
-        <h3>{project}</h3>
-      </div>
-      <div className="project-main-sections">
-        <div className="project-info-section">
-          <div className="project-text-section">
-            <h4>{text}</h4>
-            <h5>{tech}</h5>
-            <div>{repo}</div>
-          </div>
+  const { ref, inView } = useInView();
 
-          <div>
-            <img className="project-images" src={images[0]} alt="" />
+  return (
+    <div className={inView ? "animate-card" : ""}>
+      <div className="project" ref={ref}>
+        <p className="project-title">{project}</p>
+        <div className="project-main-sections">
+          <div className="project-info-section">
+            <div className="project-text-section">
+              <p>{text}</p>
+              <p>{tech}</p>
+              <a href={repo}>
+                <img
+                  className="github-image"
+                  src="https://i.lensdump.com/i/rl4SJA.png"
+                ></img>
+              </a>
+            </div>
+
+            <div>
+              <img className="project-images" src={images[0]} alt="" />
+            </div>
           </div>
         </div>
       </div>

@@ -13,12 +13,34 @@ body {
 }
 .children {
   margin-top: 20rem;
+  margin-left: 4rem;
+  z-index: 1;
 }
 
 .navBar {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: -10;
+}
+.portfolio-title {
+  z-index: -10;
+}
+.animate-card {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .about-me-section {
@@ -26,11 +48,17 @@ body {
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 40rem;
+}
+
+.about-me-title {
+  padding-left: 70%;
+  font-size: 5rem;
 }
 
 .about-me-image {
-  width: 30%;
-  height: 30%;
+  width: 85%;
+  height: 85%;
   border-radius: 50%;
   overflow: hidden;
   background-color: blue;
@@ -38,14 +66,20 @@ body {
 
 .about-me-text {
   align-self: center;
+  font-size: 2rem;
   padding: 0 3rem;
+}
+
+.github-image {
+  max-width: 10rem;
 }
 
 body {
   background: #f2f2f2;
   color: #333;
   font-family: "Nunito";
-  padding: 0rem 0rem 10rem 0rem;
+  font-size: 1.5rem;
+  // padding: 0rem 0rem 10rem 0rem;
 }
 a {
   color: #333;
@@ -80,12 +114,18 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  // margin-top: 2rem;
+  padding: 2rem;
 }
 
 .project-main-sections {
   display: flex;
   flex-direction: row;
+}
+
+.portfolio-section-title {
+  padding-top: 5rem;
+  font-size: 5rem;
 }
 
 .project-info-section {
@@ -100,4 +140,10 @@ footer {
 
 .project-images {
   align-items: flex-end;
+}
+
+.nav-section {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }

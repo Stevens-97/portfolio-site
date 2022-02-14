@@ -1,12 +1,13 @@
-.navBar {
+.navBarSection {
   // margin: 10px auto 80px;
-  // padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  // padding: 6rem 0;
+  position: fixed;
+  top: 5rem;
+  z-index: 2;
   // border-bottom: 1px solid #ddd;
 }
 
-.navbar-links {
-  padding-right: 1rem;
+.navbarLinks {
+  // padding-right: 1rem;
+  z-index: 100;
 }
