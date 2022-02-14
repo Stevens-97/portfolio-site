@@ -8,7 +8,7 @@ export default function ProjectPortfolio() {
         return (
           <Project
             project={example.project}
-            image={example.image}
+            images={example.images}
             repo={example.repo}
             tech={example.tech}
             text={example.text}

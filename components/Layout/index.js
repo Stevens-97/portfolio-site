@@ -5,10 +5,12 @@ export default function Layout({ children }) {
   return (
     <div className="content">
       <div>
-        <Header title="PORTFOLIO SITE" />
-        <NavBar />
+        <div className="navBar">
+          <Header title="PORTFOLIO SITE" />
+          <NavBar />
+        </div>
       </div>
-      <div>{children}</div>
+      <div className="children">{children}</div>
     </div>
   );
 }
