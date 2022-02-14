@@ -7,6 +7,10 @@ import AboutMe from "../components/AboutMe";
 export default function Home() {
   return (
     <div className={css.container}>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+      ></meta>
       <Head>
         <title>ES personal site</title>
         <link rel="icon" href="/favicon.ico" />
