@@ -3,7 +3,7 @@ import Project from "../Project";
 
 export default function ProjectPortfolio() {
   return (
-    <div>
+    <div id="2">
       {data.map((example) => {
         return (
           <Project
