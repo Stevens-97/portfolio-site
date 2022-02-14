@@ -17,18 +17,19 @@ export default function ProjectPortfolio() {
       >
         Portfolio
       </h3>
-
-      {data.map((example, index) => {
-        return (
-          <Project
-            project={example.project}
-            images={example.images}
-            repo={example.repo}
-            tech={example.tech}
-            text={example.text}
-          />
-        );
-      })}
+      <div className="project-cards">
+        {data.map((example, index) => {
+          return (
+            <Project
+              project={example.project}
+              images={example.images}
+              repo={example.repo}
+              tech={example.tech}
+              text={example.text}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
