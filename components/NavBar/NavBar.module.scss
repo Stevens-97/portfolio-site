@@ -11,3 +11,10 @@
   // padding-right: 1rem;
   z-index: 100;
 }
+
+@media screen and (max-width: 768px) {
+  .navBarSection {
+    position: relative;
+    top: 0;
+  }
+}
