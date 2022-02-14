@@ -13,7 +13,7 @@ interface AboutMeSection {
 
 export const aboutMe: AboutMeSection = {
   text: "Hi my name is Elliott, and I am a software engineer! I like to delve into new technologies to push my knowledge further. Before I became a software engineer I had completed my PGCE and Master in Chemistry. Now I seek to cultivate my skills in a challenging software engineering post.",
-  image: "To be added!",
+  image: "https://i2.lensdump.com/i/rl4qCz.jpg",
 };
 
 export const data: DataStructure[] = [
