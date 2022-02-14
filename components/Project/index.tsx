@@ -19,7 +19,7 @@ export default function Project({
             <div className="project-text-section">
               <p>{text}</p>
               <p>{tech}</p>
-              <a href={repo}>
+              <a href={repo} target={"_blank"}>
                 <img
                   className="github-image"
                   src="https://i.lensdump.com/i/rl4SJA.png"
