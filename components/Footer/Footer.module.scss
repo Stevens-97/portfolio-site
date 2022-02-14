@@ -1,2 +1,27 @@
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.githubImage {
+  max-width: 5rem;
+  max-height: 5rem;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+.linkedinImage {
+  padding-top: 1rem;
+  max-width: 5rem;
+  max-height: 5rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  align-self: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }

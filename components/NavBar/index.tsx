@@ -12,7 +12,7 @@ export default function NavBar() {
       </a>
       &nbsp; &nbsp;
       <a className={css.navbarLinks} href="#3">
-        Contacts
+        Contact
       </a>
     </nav>
   );
