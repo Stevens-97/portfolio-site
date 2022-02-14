@@ -6,9 +6,12 @@ export default function Layout({ children }) {
     <div className="content">
       <div>
         <div className="navBar">
-          <Header title="PORTFOLIO SITE" />
-          <NavBar />
+          <div className="portfolio-title">
+            <Header title="PORTFOLIO SITE" />
+          </div>
+          <div className="nav-section"></div>
         </div>
+        <NavBar />
       </div>
       <div className="children">{children}</div>
     </div>
