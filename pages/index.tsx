@@ -12,12 +12,11 @@ export default function Home() {
         content="width=device-width, initial-scale=1.0"
       ></meta>
       <Head>
-        <title>ES personal site</title>
+        <title>Portfolio site</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <AboutMe />
-        <span className="section-break"></span>
         <div>
           <ProjectPortfolio />
         </div>

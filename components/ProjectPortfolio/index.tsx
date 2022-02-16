@@ -11,7 +11,7 @@ export default function ProjectPortfolio() {
         className={
           inView
             ? `animate-card portfolio-section-title`
-            : `"portfolio-section-title`
+            : `portfolio-section-title`
         }
         ref={ref}
       >
