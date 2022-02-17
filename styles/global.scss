@@ -20,6 +20,7 @@ body {
 .children {
   margin-top: 10rem;
   margin-left: 4rem;
+  margin-right: 4rem;
   z-index: 1;
 }
 
@@ -48,23 +49,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-.about-me {
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
-  color: rgb(10, 5, 7);
-  border-radius: 1em;
-  overflow: hidden;
-
-  outline: var(--outline-width) solid lime;
-
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30rem;
-  // margin-top: 2rem;
-  padding: 2rem;
-  height: 21rem;
 }
 
 .about-me-section {
@@ -179,9 +163,31 @@ footer {
   align-self: center;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+
+.about-me {
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  color: rgb(10, 5, 7);
+  border-radius: 1em;
+  overflow: hidden;
+
+  outline: var(--outline-width) solid lime;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30rem;
+  // margin-top: 2rem;
+  padding: 2rem;
+  height: 30vh;
+}
+
+@media screen and (max-width: 1366px) {
   .children {
     margin-top: 0rem;
+  }
+
+  .project-section {
+    margin: 0 auto;
   }
 
   .about-me-title {
@@ -197,11 +203,12 @@ footer {
   }
   .project {
     max-width: 30rem;
-    margin-left: auto;
+    margin: 2rem auto;
+    padding: 1rem;
     left: 2rem;
   }
   .project-cards {
-    margin-right: 2rem;
+    margin: 0 auto;
   }
   .project-images {
     display: none;
@@ -220,10 +227,9 @@ footer {
   }
   .about-me {
     max-width: 30rem;
-    margin-bottom: 0rem;
-    margin-right: 2rem;
-    padding: 2;
-    height: 56rem;
+    margin: 0 auto;
+    padding: 1rem;
+    height: 45rem;
     left: 2rem;
   }
 
@@ -242,5 +248,6 @@ footer {
   .about-me-text {
     text-align: left;
     font-size: 1.5rem;
+    padding: 0rem;
   }
 }
