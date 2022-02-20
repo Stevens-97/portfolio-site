@@ -18,14 +18,14 @@ export const aboutMe: AboutMeSection = {
 
 export const data: DataStructure[] = [
   {
-    project: "Personal portfolio site",
-    images: ["https://i3.lensdump.com/i/rl4ghK.jpg"],
-    text: "This is my personal site that hosts my personal and group prjects. This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku.",
-    repo: "https://github.com/Stevens-97/portfolio-site",
-    tech: "JavaScript, Next.js, PG, Jest, SuperTest, SCSS/HTML",
+    project: "Service stack (Four week team project)",
+    images: ["https://i3.lensdump.com/i/rSVq8M.jpg"],
+    text: "The four week project was the capstone project of my School of Code journey! This is currently being developed and features heavily in engineering a valued user experience through team work. Combining all elements of planning and agile methodolgies to we seek to make a unique and valued user experience.",
+    repo: "To be added!",
+    tech: "Tech: Next.js, MUI (More to be added)",
   },
   {
-    project: "Bootcamper help desk",
+    project: "Bootcamper help desk (One week team project)",
     images: [
       "https://i2.lensdump.com/i/rl4ZMc.jpg",
       "https://i1.lensdump.com/i/rl4Iq1.jpg",
@@ -33,6 +33,13 @@ export const data: DataStructure[] = [
     text: "The bootcamper help desk was created in under a week with a team of four using agile methodolgies (stand ups, retrospectives, kanban ect). This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku.",
     repo: "https://github.com/SchoolOfCode/national-project-week-repo-2-room-16-craig-elliot-emily-michael",
     tech: "JavaScript, React, Node.Js, Jest, SuperTest, pg, CSS/HTML",
+  },
+  {
+    project: "Personal portfolio site",
+    images: ["https://i2.lensdump.com/i/rSVsye.jpg"],
+    text: "This is my personal site that hosts my personal and group prjects. This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku.",
+    repo: "https://github.com/Stevens-97/portfolio-site",
+    tech: "JavaScript, Next.js, PG, Jest, SuperTest, SCSS/HTML",
   },
   {
     project: "Song reloader",
@@ -65,11 +72,5 @@ export const data: DataStructure[] = [
     repo: "https://github.com/Stevens-97/snake",
     tech: "Python",
   },
-  {
-    project: "Four week project",
-    images: ["To be added!"],
-    text: "To be added!",
-    repo: "To be added!",
-    tech: "To be added!",
-  },
+
 ];
