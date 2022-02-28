@@ -15,6 +15,7 @@ The styling of this project was beyond what I had done previously. Chiefly, inte
 
 ## To do
 - Update site as projects are completed
+- Add testing!
 
 
 
