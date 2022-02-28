@@ -19,7 +19,7 @@ export const aboutMe: AboutMeSection = {
 export const data: DataStructure[] = [
   {
     project: "WeAreSharers (Four week team project)",
-    images: ["https://i3.lensdump.com/i/rSVq8M.jpg"],
+    images: ["https://i3.lensdump.com/i/rvJQF3.jpg"],
     text: "The four-week project was the capstone project of my School of Code journey! This is currently being developed and features heavily in engineering a valued user experience through teamwork, combining all elements of planning and agile methodologies to make a unique and valued user experience. Repo to be added soon.",
     repo: "To be added!",
     tech: "Tech: Next.js, MUI (More to be added)",
@@ -54,7 +54,7 @@ export const data: DataStructure[] = [
   {
     project: "Hangman",
     images: [
-      "https://i.lensdump.com/i/rl40jH.jpg",
+      "https://i.lensdump.com/i/rvJ9I0.jpg",
       "https://i2.lensdump.com/i/rl4WKk.jpg",
       "https://i3.lensdump.com/i/rl4iPx.jpg",
     ],
