@@ -58,7 +58,7 @@ export const data: DataStructure[] = [
       "https://i2.lensdump.com/i/rl4WKk.jpg",
       "https://i3.lensdump.com/i/rl4iPx.jpg",
     ],
-    text: "This is my personal site that hosts my personal project where I recreated the game hangman. This was my first longer project where I implimented all my learning upto date (testing, RESTful APIs, user stories etc)!",
+    text: "This is my attempt at recreating the game hangman. This was my first longer project where I implimented all my learning upto date (testing, RESTful APIs, user stories etc)!",
     repo: "https://github.com/Stevens-97/hangman",
     tech: "Tech: JavaScript, CSS/HTML, dotenv, Jest, SuperTest, PG, Express",
   },
