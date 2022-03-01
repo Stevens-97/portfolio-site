@@ -17,6 +17,7 @@ export default function Project({
         <div className="project-main-sections">
           <div className="project-info-section">
             <div className="project-text-section">
+            <img className="project-images-responsive" src={images[0]} alt={`An image showing ${project}`} />
               <p>{text}</p>
               <p>{tech}</p>
               <div className="repo-link">
