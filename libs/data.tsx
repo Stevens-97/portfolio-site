@@ -18,10 +18,10 @@ export const aboutMe: AboutMeSection = {
 
 export const data: DataStructure[] = [
   {
-    project: "WeAreSharers (Four week team project)",
+    project: "WeShare (Four week team project)",
     images: ["https://i3.lensdump.com/i/rvJQF3.jpg"],
     text: "The four-week project was the capstone project of my School of Code journey! This is currently being developed and features heavily in engineering a valued user experience through teamwork, combining all elements of planning and agile methodologies to make a unique and valued user experience. Repo to be added soon.",
-    repo: "To be added!",
+    repo: "https://github.com/SchoolOfCode/final-project-repo-easy-scrum-easy-go-room-21/tree/dev",
     tech: "Tech: Next.js, MUI (More to be added)",
   },
   {
@@ -31,7 +31,7 @@ export const data: DataStructure[] = [
       "https://i1.lensdump.com/i/rl4Iq1.jpg",
     ],
     text: "The bootcamper help desk was created in a week with a team of four using agile methodolgies (stand ups, retrospectives, kanban ect). This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku. Repo to be added soon.",
-    repo: "https://github.com/SchoolOfCode/national-project-week-repo-2-room-16-craig-elliot-emily-michael",
+    repo: "https://github.com/SchoolOfCode/national-project-week-room-16-craig-elliot-emily-michael",
     tech: "Tech: JavaScript, React, Node.Js, Jest, SuperTest, pg, CSS/HTML",
   },
   {
