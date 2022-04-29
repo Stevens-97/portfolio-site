@@ -1,15 +1,16 @@
+import Link from "next/link";
 import css from "./NavBar.module.scss";
 
 export default function NavBar() {
   return (
     <nav className={css.navBarSection}>
-      <a className="navbar-links" href="#1">
-        About me
-      </a>
+      <div className="navbar-links">
+        <Link href="/">Home</Link>
+      </div>
       &nbsp; &nbsp;
-      <a className={css.navbarLinks} href="#2">
-        Projects
-      </a>
+      <div className={css.navbarLinks}>
+        <Link href="/projects">Projects</Link>
+      </div>
       &nbsp; &nbsp;
       <a className={css.navbarLinks} href="#3">
         Contact
