@@ -5,7 +5,7 @@ export default function Footer() {
   const { ref, inView } = useInView();
 
   return (
-    <>
+    <div className={css.footerContainer}>
       <footer id="3" className={css.footer}>
         <div className={inView ? "animate-card" : ""} ref={ref}>
           <h4>Contact me on my socials:</h4>
@@ -32,6 +32,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
