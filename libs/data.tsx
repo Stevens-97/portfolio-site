@@ -3,8 +3,9 @@ export interface DataStructure {
   projectTitle: string;
   projectImages: string[];
   projectText: string;
-  repo: string;
-  tech: string;
+  repo: string[];
+  tech: string[];
+  projectTags: string[];
 }
 
 interface AboutMeSection {
@@ -36,8 +37,25 @@ export const data: DataStructure[] = [
     projectImages: ["https://i3.lensdump.com/i/rvJQF3.jpg"],
     projectText:
       "The four-week project was the capstone project of my School of Code journey! This is currently being developed and features heavily in engineering a valued user experience through teamwork, combining all elements of planning and agile methodologies to make a unique and valued user experience. Repo to be added soon.",
-    repo: "https://github.com/SchoolOfCode/final-project-repo-easy-scrum-easy-go-room-21/tree/dev",
-    tech: "Tech: Next.js, MUI (More to be added)",
+    repo: [
+      "https://github.com/SchoolOfCode/final-project-repo-easy-scrum-easy-go-room-21/tree/dev",
+    ],
+    tech: ["Tech:", "Next.js", "MUI", "Cypress.io", "node.js", "jason-server"],
+    projectTags: [
+      "four week project",
+      "javascript",
+      "next.js",
+      "next js",
+      "mui",
+      "material UI",
+      "pair programming",
+      "demo day",
+      "prisma",
+      "postgresql",
+      "group project",
+      "weshare",
+      "easy scrum easy go",
+    ],
   },
   {
     projectId: 2,
@@ -48,8 +66,34 @@ export const data: DataStructure[] = [
     ],
     projectText:
       "The bootcamper help desk was created in a week with a team of four using agile methodolgies (stand ups, retrospectives, kanban ect). This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku. Repo to be added soon.",
-    repo: "https://github.com/SchoolOfCode/national-project-week-room-16-craig-elliot-emily-michael",
-    tech: "Tech: JavaScript, React, Node.Js, Jest, SuperTest, pg, CSS/HTML",
+    repo: [
+      "https://github.com/Stevens-97/national-project-week-repo-2-room-16-craig-elliot-emily-michael?",
+      "https://github.com/Stevens-97/national-project-week-room-16-craig-elliot-emily-michael",
+    ],
+    tech: [
+      "Tech:",
+      "JavaScript",
+      "React",
+      "node.js",
+      "Jest",
+      "SuperTest",
+      "pg",
+      "CSS/HTML",
+      "postman",
+    ],
+    projectTags: [
+      "javaScript",
+      "react",
+      "node.js",
+      "jest",
+      "supertest",
+      "pg",
+      "css/html",
+      "pair programming",
+      "group project",
+      "bootcamper help desk",
+      "testing",
+    ],
   },
   {
     projectId: 3,
@@ -57,23 +101,30 @@ export const data: DataStructure[] = [
     projectImages: ["https://i2.lensdump.com/i/rSVsye.jpg"],
     projectText:
       "This is my site that hosts my personal and team projects. This is still being developed! I focused initially on user experience and now seek to dive into the testing and building a backend to serve the data.",
-    repo: "https://github.com/Stevens-97/portfolio-site",
-    tech: "Tech: JavaScript, Next.js, PG, Jest, SuperTest, SCSS/HTML",
+    repo: ["https://github.com/Stevens-97/portfolio-site"],
+    tech: ["Tech:", "JavaScript", "Next.js", "typescript", "SCSS/HTML"],
+    projectTags: [
+      "javaScript",
+      "jext.js",
+      "typescript",
+      "scss/html",
+      "personal site",
+    ],
   },
+  // {
+  //   projectId: 4,
+  //   projectTitle: "Song reloader",
+  //   projectImages: [
+  //     "https://i2.lensdump.com/i/rl4Rwm.jpg",
+  //     "https://i3.lensdump.com/i/rl4E1i.jpg",
+  //   ],
+  //   projectText:
+  //     "Created as a team of fellow bootcampers during a single-day hackathon. There are plans to keep developing this. Repo to be added soon.",
+  //   repo: ["To be added!"],
+  //   tech: ["Tech: React, CSS/HTML, JavaScript"],
+  // },
   {
     projectId: 4,
-    projectTitle: "Song reloader",
-    projectImages: [
-      "https://i2.lensdump.com/i/rl4Rwm.jpg",
-      "https://i3.lensdump.com/i/rl4E1i.jpg",
-    ],
-    projectText:
-      "Created as a team of fellow bootcampers during a single-day hackathon. There are plans to keep developing this. Repo to be added soon.",
-    repo: "To be added!",
-    tech: "Tech: React, CSS/HTML, JavaScript",
-  },
-  {
-    projectId: 5,
     projectTitle: "Hangman",
     projectImages: [
       "https://i.lensdump.com/i/rvJ9I0.jpg",
@@ -82,11 +133,31 @@ export const data: DataStructure[] = [
     ],
     projectText:
       "This is my attempt at recreating the game hangman. This was my first longer project where I implimented all my learning upto date (testing, RESTful APIs, user stories etc)!",
-    repo: "https://github.com/Stevens-97/hangman",
-    tech: "Tech: JavaScript, CSS/HTML, dotenv, Jest, SuperTest, PG, Express",
+    repo: ["https://github.com/Stevens-97/hangman"],
+    tech: [
+      "Tech:",
+      "JavaScript",
+      "CSS/HTML",
+      "dotenv",
+      "Jest",
+      "SuperTest",
+      "PG",
+      "Express",
+    ],
+    projectTags: [
+      "javascript",
+      "css/html",
+      "dotenv",
+      "jest",
+      "supertest",
+      "pg",
+      "express",
+      "hangman",
+      "testing",
+    ],
   },
   {
-    projectId: 6,
+    projectId: 5,
     projectTitle: "Snake ",
     projectImages: [
       "https://i1.lensdump.com/i/rl41zP.jpg",
@@ -94,7 +165,8 @@ export const data: DataStructure[] = [
     ],
     projectText:
       "This is was one of my first projects and features Python. This project was also my first experience into project orientated programming (classes, inheritence ect).",
-    repo: "https://github.com/Stevens-97/snake",
-    tech: "Tech: Python",
+    repo: ["https://github.com/Stevens-97/snake"],
+    tech: ["Tech:", "Python"],
+    projectTags: ["python"],
   },
 ];

@@ -11,10 +11,6 @@ export default function NavBar() {
       <div className={css.navbarLinks}>
         <Link href="/projects">Projects</Link>
       </div>
-      &nbsp; &nbsp;
-      <a className={css.navbarLinks} href="#3">
-        Contact
-      </a>
     </nav>
   );
 }

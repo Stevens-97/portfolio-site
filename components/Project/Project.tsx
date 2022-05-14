@@ -5,13 +5,16 @@ import {
 } from "react-icons/md";
 import { BsCircleFill, BsCircle } from "react-icons/bs";
 import styles from "./project.module.css";
+import Image from "next/image";
 
 interface projectLayout {
   project: {
     projectId: number;
     projectTitle: string;
-    projectText: string;
     projectImages: string[];
+    projectText: string;
+    repo: string[];
+    tech: string[];
     projectTags: string[];
   };
   projectIndex: number;
@@ -108,11 +111,18 @@ export default function Project({ project, projectIndex }: projectLayout) {
           {aboutSection && (
             <p className={styles.projectText}>{project.projectText}</p>
           )}
-          {githubSection && (
-            <p className={styles.projectText}>
-              Github images and links to repo here
-            </p>
-          )}
+          {githubSection && <p>Github links:</p> &&
+            project.repo.map((repoLink, index) => {
+              return (
+                <a href={repoLink} key={index}>
+                  <img
+                    className={styles.githubImage}
+                    src={"https://i3.lensdump.com/i/rl4UeZ.png"}
+                    alt={"Github logo"}
+                  />
+                </a>
+              );
+            })}
           {siteSection && <p className={styles.projectText}>Site link here</p>}
         </div>
       </span>

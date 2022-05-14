@@ -46,6 +46,10 @@
   width: auto;
   /* background-color: bisque; */
 }
+.githubImage {
+  height: 4vh;
+  width: 3vw;
+}
 
 /* width */
 /* ::-webkit-scrollbar {
