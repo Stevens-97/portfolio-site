@@ -131,7 +131,7 @@ export default function ExploreSection({
                   handleClick(e, "group project");
                 }}
               >
-                Group project
+                Group projects
               </button>
             </li>
           </ul>

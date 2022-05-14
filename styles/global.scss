@@ -14,7 +14,6 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 .content {
-
   margin: 0 auto;
   position: relative;
 }
@@ -58,7 +57,7 @@ body {
   align-items: flex-start;
   justify-content: center;
 
-  margin-bottom: 40rem;
+  // margin-bottom: 10rem;
 }
 
 .about-me-title {
@@ -112,31 +111,31 @@ footer {
   padding: 1rem;
 }
 
-.project {
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
-  color: rgb(10, 5, 7);
-  border-radius: 1em;
-  overflow: hidden;
+// .project {
+//   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+//   background: rgb(255, 255, 255);
+//   color: rgb(10, 5, 7);
+//   border-radius: 1em;
+//   overflow: hidden;
 
-  outline: var(--outline-width) solid lime;
+//   outline: var(--outline-width) solid lime;
 
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  // margin-top: 2rem;
-  padding: 2rem;
-}
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 2rem;
+//   // margin-top: 2rem;
+//   padding: 2rem;
+// }
 
 .project-main-sections {
   display: flex;
   flex-direction: row;
 }
 
-.portfolio-section-title {
-  padding-top: 5rem;
-  font-size: 5rem;
-}
+// .portfolio-section-title {
+//   padding-top: 5rem;
+//   font-size: 5rem;
+// }
 
 .project-info-section {
   display: flex;
@@ -177,15 +176,15 @@ footer {
 
   display: flex;
   flex-direction: column;
-  margin-bottom: 34rem;
+  // margin-bottom: 8rem;
   // margin-top: 2rem;
   padding: 2rem;
   height: 25rem;
 }
 
-.project-images-responsive{
+.project-images-responsive {
   display: none;
-} 
+}
 
 @media screen and (max-width: 1918px) {
   .children {
