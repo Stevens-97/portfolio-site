@@ -1,6 +1,13 @@
 .project {
   max-width: 50vw;
 }
+.githubLinkSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.githubImage {
+}
 
 .imageSection {
   width: 50vw;

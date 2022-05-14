@@ -7,7 +7,7 @@ interface projectLayout {
   projectLayout: [
     projectId: number,
     projectTitle: string,
-    projectImages: string[],
+    projectMedia: string[],
     projectText: string,
     repo: string[],
     tech: string[],
@@ -98,6 +98,16 @@ export default function ExploreSection({
               <button
                 className={styles.tagButton}
                 onClick={(e) => {
+                  handleClick(e, "all");
+                }}
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button
+                className={styles.tagButton}
+                onClick={(e) => {
                   handleClick(e, "javascript");
                 }}
               >
@@ -121,7 +131,7 @@ export default function ExploreSection({
                   handleClick(e, "testing");
                 }}
               >
-                testing
+                Testing
               </button>
             </li>
             <li>

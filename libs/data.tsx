@@ -6,6 +6,7 @@ export interface DataStructure {
   repo: string[];
   tech: string[];
   projectTags: string[];
+  projectVideo?: string;
 }
 
 interface AboutMeSection {
@@ -35,13 +36,13 @@ export const data: DataStructure[] = [
     projectId: 1,
     projectTitle: "WeShare (Four week team project)",
     projectImages: ["https://i3.lensdump.com/i/rvJQF3.jpg"],
-    projectText:
-      "The four-week project was the capstone project of my School of Code journey! This is currently being developed and features heavily in engineering a valued user experience through teamwork, combining all elements of planning and agile methodologies to make a unique and valued user experience. Repo to be added soon.",
+    projectText: `The four-week project was the capstone project of my School of Code journey! This features heavily in engineering a valued user experience through teamwork, combining all elements of planning and agile methodologies to make a unique and valued user experience.`,
     repo: [
       "https://github.com/SchoolOfCode/final-project-repo-easy-scrum-easy-go-room-21/tree/dev",
     ],
     tech: ["Tech:", "Next.js", "MUI", "Cypress.io", "node.js", "jason-server"],
     projectTags: [
+      "all",
       "four week project",
       "javascript",
       "next.js",
@@ -56,6 +57,7 @@ export const data: DataStructure[] = [
       "weshare",
       "easy scrum easy go",
     ],
+    projectVideo: "https://youtu.be/IUmr7r1vAXE",
   },
   {
     projectId: 2,
@@ -65,7 +67,7 @@ export const data: DataStructure[] = [
       "https://i1.lensdump.com/i/rl4Iq1.jpg",
     ],
     projectText:
-      "The bootcamper help desk was created in a week with a team of four using agile methodolgies (stand ups, retrospectives, kanban ect). This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku. Repo to be added soon.",
+      "The bootcamper help desk was created in a week with a team of four using agile methodolgies (stand ups, retrospectives, kanban ect). This features testing (jest & superTest), frontend deployed on netlify and backend deployed on heroku.",
     repo: [
       "https://github.com/Stevens-97/national-project-week-repo-2-room-16-craig-elliot-emily-michael?",
       "https://github.com/Stevens-97/national-project-week-room-16-craig-elliot-emily-michael",
@@ -82,6 +84,7 @@ export const data: DataStructure[] = [
       "postman",
     ],
     projectTags: [
+      "all",
       "javaScript",
       "react",
       "node.js",
@@ -100,10 +103,11 @@ export const data: DataStructure[] = [
     projectTitle: "Personal portfolio site",
     projectImages: ["https://i2.lensdump.com/i/rSVsye.jpg"],
     projectText:
-      "This is my site that hosts my personal and team projects. This is still being developed! I focused initially on user experience and now seek to dive into the testing and building a backend to serve the data.",
+      "This is my site that hosts my personal and team projects. I focused initially on user experience, I will seek to add more features in time!.",
     repo: ["https://github.com/Stevens-97/portfolio-site"],
     tech: ["Tech:", "JavaScript", "Next.js", "typescript", "SCSS/HTML"],
     projectTags: [
+      "all",
       "javaScript",
       "jext.js",
       "typescript",
@@ -145,6 +149,7 @@ export const data: DataStructure[] = [
       "Express",
     ],
     projectTags: [
+      "all",
       "javascript",
       "css/html",
       "dotenv",
@@ -167,6 +172,6 @@ export const data: DataStructure[] = [
       "This is was one of my first projects and features Python. This project was also my first experience into project orientated programming (classes, inheritence ect).",
     repo: ["https://github.com/Stevens-97/snake"],
     tech: ["Tech:", "Python"],
-    projectTags: ["python"],
+    projectTags: ["all", "python"],
   },
 ];

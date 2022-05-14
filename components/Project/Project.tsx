@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import {
   MdOutlineArrowBackIosNew,
   MdOutlineArrowForwardIos,
@@ -16,6 +16,7 @@ interface projectLayout {
     repo: string[];
     tech: string[];
     projectTags: string[];
+    projectVideo?: string;
   };
   projectIndex: number;
 }
@@ -23,6 +24,7 @@ interface projectLayout {
 export default function Project({ project, projectIndex }: projectLayout) {
   const [current, setCurrent] = useState(0);
   const [length, setLength] = useState(project.projectImages.length);
+  const [projectMedia, setProjectMedia] = useState(project.projectImages);
   const [aboutSection, setAboutSection] = useState(true);
   const [githubSection, setGithubSection] = useState(false);
   const [siteSection, setSiteSection] = useState(false);
@@ -68,7 +70,7 @@ export default function Project({ project, projectIndex }: projectLayout) {
             onClick={prevImage}
           />
         </div>
-        {project.projectImages.map((image, index) => {
+        {projectMedia.map((image, index) => {
           return (
             <div
               className={index === current ? "imageActive" : "imageNotActive"}
@@ -101,9 +103,9 @@ export default function Project({ project, projectIndex }: projectLayout) {
           {/* <span className={styles.projectTab}>
             <p className={styles.projectTabText}>twitter</p>
           </span> */}
-          <span className={styles.projectTab} onClick={toggleSiteSection}>
+          {/* <span className={styles.projectTab} onClick={toggleSiteSection}>
             <p className={styles.projectTabText}>Site</p>
-          </span>
+          </span> */}
           {/* <img src="https://i.lensdump.com/i/rl4SJA.png" alt="github logo"></img> */}
         </div>
         <div className={styles.textSection}>
@@ -114,16 +116,19 @@ export default function Project({ project, projectIndex }: projectLayout) {
           {githubSection && <p>Github links:</p> &&
             project.repo.map((repoLink, index) => {
               return (
-                <a href={repoLink} key={index}>
-                  <img
-                    className={styles.githubImage}
-                    src={"https://i3.lensdump.com/i/rl4UeZ.png"}
-                    alt={"Github logo"}
-                  />
-                </a>
+                <span className={styles.githubLinkSection}>
+                  <p>Repo {index + 1}:</p>
+                  <a href={repoLink} key={index}>
+                    <img
+                      className={styles.githubImage}
+                      src={"https://i3.lensdump.com/i/rl4UeZ.png"}
+                      alt={"Github logo"}
+                    />
+                  </a>
+                </span>
               );
             })}
-          {siteSection && <p className={styles.projectText}>Site link here</p>}
+          {/* {siteSection && <p className={styles.projectText}>Site link here</p>} */}
         </div>
       </span>
     </span>

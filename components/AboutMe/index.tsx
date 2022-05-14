@@ -22,6 +22,18 @@ export default function AboutMe() {
           />
         </div>
       </div>
+      <span className="project-video">
+        <p>Take a look at my recent group project:</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/IUmr7r1vAXE"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </span>
       <Footer />
     </div>
   );
