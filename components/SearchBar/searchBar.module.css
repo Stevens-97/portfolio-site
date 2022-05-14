@@ -1,0 +1,74 @@
+.visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.searchBarForm {
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+  height: 100%;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  height: 3vh;
+  width: 6vw;
+}
+
+.submitButtonIcon {
+  height: 2vh;
+  width: 2vw;
+  align-self: center;
+}
+
+.formField {
+  height: 3vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* input[type="text"],
+input[type="text"]:focus {
+  border: none;
+  border-bottom: 2px solid red;
+} */
+
+/* input[type="text"]:focus {
+  outline: none;
+} */
+
+@media only screen and (max-width: 1200px) {
+  .searchBarForm {
+    width: 23vw;
+  }
+  .formField {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .searchBarForm {
+    width: 98vw;
+  }
+  .formField {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .searchBarForm {
+    width: 93vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .searchBarForm {
+    width: 93vw;
+  }
+}

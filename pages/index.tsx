@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import css from "../styles/home.module.scss";
-import ProjectPortfolio from "../components/ProjectPortfolio";
+// import ProjectPortfolio from "../components/ProjectPortfolio";
 import AboutMe from "../components/AboutMe";
 
 export default function Home() {
@@ -17,9 +17,7 @@ export default function Home() {
       </Head>
       <main>
         <AboutMe />
-        <div>
-          <ProjectPortfolio />
-        </div>
+        <div>{/* <ProjectPortfolio /> */}</div>
       </main>
       <span className="section-break"></span>
       <Footer />

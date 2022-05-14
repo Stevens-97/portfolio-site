@@ -1,0 +1,76 @@
+.projectSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  /* background-color: rgb(232, 191, 142); */
+}
+.leftArrow,
+.rightArrow {
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  align-self: center;
+  min-width: 2vw;
+  height: auto;
+}
+
+.ArrowDiv {
+  background-color: inherit;
+  border-radius: 5%;
+  height: 70vh;
+  display: flex;
+  align-self: center;
+}
+.ArrowDiv:hover {
+  background-color: rgba(38, 44, 44, 0.2);
+}
+.wholeProjectSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  /* background-color: rgb(154, 54, 70); */
+  height: 70vh;
+  width: 70vw;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+
+.exploreSection {
+  /* margin: 1rem; */
+  /* background-color: yellow; */
+
+  align-self: flex-start;
+}
+
+@media only screen and (max-width: 1200px) {
+  .exploreSection {
+    width: 100vw;
+  }
+  .projectSection {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .wholeProjectSection {
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100vw;
+  }
+  .projectSection {
+    width: 100%;
+  }
+  .exploreSection {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 481px) {
+  /* Pass */
+  .projectSection {
+    width: 100%;
+  }
+}
