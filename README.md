@@ -1,9 +1,5 @@
 # Project: Portfolio site
 
-**URL for currently deployed site**
-
-> [Site link](https://esportfoliosite.netlify.app/)
-
 
 ## What I learnt
 This has been a quite an ambition project for the timescale I attempted to impliment it in. Having just over the last week introduced to TypeScript I wanted to complete this project using both TypeScript and Next.js. While this project does not benefit from some of Next.js features (I.e. getStaticProps/paths, APIs (to which I got some practice trialling and erroring these),  I did get to grips with creating my custom 404 page, using CI/CD, integrating TypeScript, using SCSS and global/module SCSS.
