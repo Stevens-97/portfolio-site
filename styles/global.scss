@@ -1,114 +1,115 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  scroll-behavior: smooth;
-  // font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    // font-size: 1.4rem;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 .content {
-  margin: 0 auto;
-  position: relative;
+    margin: 0 auto;
+    position: relative;
 }
 .children {
-  margin-top: 10rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  z-index: 1;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    z-index: 1;
 }
 
 .navBar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: -10;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -10;
 }
 .portfolio-title {
-  z-index: -10;
-  // font-size: 1.5rem;
+    z-index: -10;
+    // font-size: 1.5rem;
 }
+
 .animate-card {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 @keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .about-me-section {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
 
-  // margin-bottom: 10rem;
+    // margin-bottom: 10rem;
 }
 
 .about-me-title {
-  padding-left: 70%;
-  font-size: 5rem;
+    padding-left: 70%;
+    font-size: 5rem;
 }
 
 .about-me-image {
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: blue;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
 }
 
 .about-me-text {
-  align-self: center;
-  font-size: 2rem;
-  padding: 0 3rem;
+    align-self: center;
+    font-size: 2rem;
+    padding: 0 3rem;
 }
 
 .github-image {
-  max-width: 10rem;
+    max-width: 10rem;
 }
 
 body {
-  background: #f2f2f2;
-  color: #333;
-  font-family: "Nunito";
-  font-size: 1.5rem;
-  // padding: 0rem 0rem 10rem 0rem;
+    background: #f2f2f2;
+    color: #333;
+    font-family: "Nunito";
+    font-size: 1.5rem;
+    // padding: 0rem 0rem 10rem 0rem;
 }
 a {
-  color: #333;
-  text-decoration: none;
+    color: #333;
+    text-decoration: none;
 }
 
 footer {
-  display: block;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 60px;
-  color: #777;
-  border-top: 1px solid #eaeaea;
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    color: #777;
+    border-top: 1px solid #eaeaea;
 }
 
 .project-images {
-  max-width: 30rem;
-  max-height: 30rem;
-  align-self: center;
-  padding: 1rem;
+    max-width: 30rem;
+    max-height: 30rem;
+    align-self: center;
+    padding: 1rem;
 }
 
 // .project {
@@ -128,8 +129,8 @@ footer {
 // }
 
 .project-main-sections {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 // .portfolio-section-title {
@@ -138,136 +139,136 @@ footer {
 // }
 
 .project-info-section {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .project-text-section {
-  justify-content: center;
+    justify-content: center;
 }
 
 .project-images {
-  align-items: flex-end;
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  background: rgb(255, 255, 255);
+    align-items: flex-end;
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
 }
 
 .nav-section {
-  position: relative;
-  z-index: 10;
-  pointer-events: auto;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 .repo-link {
-  display: flex;
-  align-self: center;
-  justify-content: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 .project-video {
-  display: flex;
-  align-self: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-me {
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
-  color: rgb(10, 5, 7);
-  border-radius: 1em;
-  overflow: hidden;
+    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    color: rgb(10, 5, 7);
+    border-radius: 1em;
+    overflow: hidden;
 
-  outline: var(--outline-width) solid lime;
+    outline: var(--outline-width) solid lime;
 
-  display: flex;
-  flex-direction: column;
-  // margin-bottom: 8rem;
-  // margin-top: 2rem;
-  padding: 2rem;
-  height: 25rem;
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: 8rem;
+    // margin-top: 2rem;
+    padding: 2rem;
+    height: 25rem;
 }
 
 .project-images-responsive {
-  display: none;
+    display: none;
 }
 
 @media screen and (max-width: 1918px) {
-  .children {
-    margin-top: 0rem;
-  }
+    .children {
+        margin-top: 0rem;
+    }
 
-  .project-section {
-    margin: 0 auto;
-  }
+    .project-section {
+        margin: 0 auto;
+    }
 
-  .about-me-title {
-    padding-left: 0%;
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
+    .about-me-title {
+        padding-left: 0%;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
 
-  .portfolio-section-title {
-    padding-top: 0rem;
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-  .project {
-    max-width: 30rem;
-    margin: 2rem auto;
-    padding: 1rem;
-    left: 2rem;
-  }
-  .project-cards {
-    margin: 0 auto;
-  }
-  .project-images {
-    display: none;
-  }
+    .portfolio-section-title {
+        padding-top: 0rem;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .project {
+        max-width: 30rem;
+        margin: 2rem auto;
+        padding: 1rem;
+        left: 2rem;
+    }
+    .project-cards {
+        margin: 0 auto;
+    }
+    .project-images {
+        display: none;
+    }
 
-  // .project-images-responsive{
-  //   display: flex;
-  //   width: 450px;
-  //   height: 450px;
-  //   margin: 0 auto;
-  // }
-  .portfolio-title {
-    z-index: -10;
-    font-size: 1.3rem;
-  }
-  .repo-link {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-  }
-  .navBar {
-    position: relative;
-  }
-  .about-me {
-    max-width: 30rem;
-    margin: 0 auto;
-    padding: 1rem;
-    height: 50rem;
-    left: 2rem;
-  }
+    // .project-images-responsive{
+    //   display: flex;
+    //   width: 450px;
+    //   height: 450px;
+    //   margin: 0 auto;
+    // }
+    .portfolio-title {
+        z-index: -10;
+        font-size: 1.3rem;
+    }
+    .repo-link {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .navBar {
+        position: relative;
+    }
+    .about-me {
+        max-width: 30rem;
+        margin: 0 auto;
+        padding: 1rem;
+        height: 50rem;
+        left: 2rem;
+    }
 
-  .about-me-section {
-    // margin-bottom: 10rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    margin-bottom: 0rem;
-  }
+    .about-me-section {
+        // margin-bottom: 10rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-bottom: 0rem;
+    }
 
-  .about-me-image {
-    align-self: center;
-  }
+    .about-me-image {
+        align-self: center;
+    }
 
-  .about-me-text {
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 0rem;
-  }
+    .about-me-text {
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 0rem;
+    }
 }

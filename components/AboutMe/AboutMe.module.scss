@@ -1,0 +1,68 @@
+// AboutMe.module.scss
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$primary-color: #4a90e2; // Example primary color
+$secondary-color: #333; // Example secondary color
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: start;
+    }
+}
+
+.text {
+    color: $secondary-color;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projectVideo {
+    margin-top: 30px;
+}
+
+.customIframe {
+    max-width: 100%;
+    border: none;
+    // additional styles
+}
+
+// Responsive design for tablets and larger devices
+@media (min-width: 768px) {
+    #about-me {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .projectVideo {
+        width: 50%;
+    }
+}
