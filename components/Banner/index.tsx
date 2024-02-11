@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "./Banner.module.scss";
+import classNames from "classnames";
 
 const Banner = () => {
+    const { techBanner, textContainer, typing, highlighted } = styles;
     useEffect(() => {
         const canvas = document.getElementById(
             "techCanvas"
@@ -12,7 +14,7 @@ const Banner = () => {
         if (!ctx) return;
 
         canvas.width = window.innerWidth;
-        canvas.height = 200;
+        canvas.height = 500;
 
         let mouse = {
             x: 0,
@@ -93,7 +95,7 @@ const Banner = () => {
 
         const resizeHandler = () => {
             canvas.width = window.innerWidth;
-            canvas.height = 200;
+            canvas.height = 500;
             init();
         };
 
@@ -107,8 +109,21 @@ const Banner = () => {
     }, []);
 
     return (
-        <div className={styles.techBanner}>
+        <div className={techBanner}>
             <canvas id="techCanvas"></canvas>
+            <div className={textContainer}>
+                <p className={typing}>
+                    Hi, welcome to my site! My name is Elliott and I am a
+                </p>
+                <p className={classNames(typing, highlighted)}>
+                    software developer.
+                </p>
+                <br></br>
+                <p className={typing}>
+                    Take a look below to find out a bit about me and see my
+                    projects.
+                </p>
+            </div>
         </div>
     );
 };

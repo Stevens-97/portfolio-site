@@ -1,136 +1,114 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
-  MdOutlineArrowBackIosNew,
-  MdOutlineArrowForwardIos,
+    MdOutlineArrowBackIosNew,
+    MdOutlineArrowForwardIos,
 } from "react-icons/md";
-import { BsCircleFill, BsCircle } from "react-icons/bs";
 import styles from "./project.module.css";
-import Image from "next/image";
+import { linkSection, liveLinkSection } from "../../libs/data";
 
-interface projectLayout {
-  project: {
-    projectId: number;
-    projectTitle: string;
-    projectImages: string[];
-    projectText: string;
-    repo: string[];
-    tech: string[];
-    projectTags: string[];
-    projectVideo?: string;
-  };
-  projectIndex: number;
+const {
+    project,
+    imageSection,
+    leftArrow,
+    rightArrow,
+    image,
+    infoSection,
+    links,
+    buttonStyle,
+    techStack,
+} = styles;
+
+interface ProjectLayout {
+    project: {
+        projectId: number;
+        projectTitle: string;
+        projectImages: string[];
+        projectText: string;
+        repoLinks: linkSection[];
+        liveLinks?: liveLinkSection[];
+        tech: string[];
+        projectVideo?: string;
+        projectLiveLink?: string;
+    };
+    projectIndex?: number;
 }
 
-export default function Project({ project, projectIndex }: projectLayout) {
-  const [current, setCurrent] = useState(0);
-  const [length, setLength] = useState(project.projectImages.length);
-  const [projectMedia, setProjectMedia] = useState(project.projectImages);
-  const [aboutSection, setAboutSection] = useState(true);
-  const [githubSection, setGithubSection] = useState(false);
-  const [siteSection, setSiteSection] = useState(false);
+export default function Project({ project: projectData }: ProjectLayout) {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  function nextImage() {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  }
+    const navigateImage = (direction: "next" | "prev") => {
+        const lastIndex = projectData.projectImages.length - 1;
+        if (direction === "next") {
+            setCurrentImageIndex(
+                currentImageIndex === lastIndex ? 0 : currentImageIndex + 1
+            );
+        } else {
+            setCurrentImageIndex(
+                currentImageIndex === 0 ? lastIndex : currentImageIndex - 1
+            );
+        }
+    };
 
-  function prevImage() {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  }
+    if (!projectData.projectImages || projectData.projectImages.length === 0) {
+        return null;
+    }
 
-  // Returns nothing if there is no data
-  if (
-    !Array.isArray(project.projectImages) ||
-    project.projectImages.length <= 0
-  ) {
-    return null;
-  }
-
-  function toggleAboutSection() {
-    setGithubSection(false);
-    setAboutSection(true);
-    setSiteSection(false);
-  }
-  function toggleSiteSection() {
-    setGithubSection(false);
-    setAboutSection(false);
-    setSiteSection(true);
-  }
-  function toggleGithubSection() {
-    setGithubSection(true);
-    setAboutSection(false);
-    setSiteSection(false);
-  }
-
-  return (
-    <span className={styles.project}>
-      <div className={styles.imageSection}>
-        <div className={styles.leftArrowDiv}>
-          <MdOutlineArrowBackIosNew
-            className={styles.leftArrow}
-            onClick={prevImage}
-          />
-        </div>
-        {projectMedia.map((image, index) => {
-          return (
-            <div
-              className={index === current ? "imageActive" : "imageNotActive"}
-            >
-              {index === current && (
+    return (
+        <span className={project}>
+            <div className={imageSection}>
+                <MdOutlineArrowBackIosNew
+                    className={leftArrow}
+                    onClick={() => navigateImage("prev")}
+                />
                 <img
-                  className={styles.image}
-                  src={image}
-                  alt="Shows aspects of the project displayed"
-                ></img>
-              )}
+                    className={image}
+                    src={projectData.projectImages[currentImageIndex]}
+                    alt="Project Display"
+                />
+                <MdOutlineArrowForwardIos
+                    className={rightArrow}
+                    onClick={() => navigateImage("next")}
+                />
             </div>
-          );
-        })}
-        <div className={styles.rightArrowDiv}>
-          <MdOutlineArrowForwardIos
-            className={styles.rightArrow}
-            onClick={nextImage}
-          />
-        </div>
-      </div>
-      <span className={styles.infoSection}>
-        <div className={styles.projectSections}>
-          <span className={styles.projectTab} onClick={toggleAboutSection}>
-            <p className={styles.projectTabText}>About</p>
-          </span>
-          <span className={styles.projectTab} onClick={toggleGithubSection}>
-            <p className={styles.projectTabText}>Github</p>
-          </span>
-          {/* <span className={styles.projectTab}>
-            <p className={styles.projectTabText}>twitter</p>
-          </span> */}
-          {/* <span className={styles.projectTab} onClick={toggleSiteSection}>
-            <p className={styles.projectTabText}>Site</p>
-          </span> */}
-          {/* <img src="https://i.lensdump.com/i/rl4SJA.png" alt="github logo"></img> */}
-        </div>
-        <div className={styles.textSection}>
-          <p className={styles.projectTitle}>{project.projectTitle}</p>{" "}
-          {aboutSection && (
-            <p className={styles.projectText}>{project.projectText}</p>
-          )}
-          {githubSection && <p>Github links:</p> &&
-            project.repo.map((repoLink, index) => {
-              return (
-                <span className={styles.githubLinkSection}>
-                  <p>Repo {index + 1}:</p>
-                  <a href={repoLink} key={index}>
-                    <img
-                      className={styles.githubImage}
-                      src={"https://i3.lensdump.com/i/rl4UeZ.png"}
-                      alt={"Github logo"}
-                    />
-                  </a>
-                </span>
-              );
-            })}
-          {/* {siteSection && <p className={styles.projectText}>Site link here</p>} */}
-        </div>
-      </span>
-    </span>
-  );
+            <span className={infoSection}>
+                <div className={styles.textSection}>
+                    <p className={styles.projectText}>
+                        {projectData.projectText}
+                    </p>
+                    <div className={techStack}>
+                        {projectData.tech
+                            ? projectData.tech.map((tech, index) => {
+                                  return <p key={`tech-${index}`}>{tech}</p>;
+                              })
+                            : null}
+                    </div>
+                    <div className={links}>
+                        {projectData?.repoLinks.map((linkSection, index) => {
+                            return (
+                                <a
+                                    href={linkSection.link}
+                                    className={buttonStyle}
+                                    key={`${linkSection.title} - ${index}`}
+                                >
+                                    {linkSection.title}
+                                </a>
+                            );
+                        })}
+                    </div>
+
+                    {/* {projectData?.liveLinks.map((linkSection, index) => {
+                        return (
+                            <a
+                                href={linkSection.link}
+                                className={buttonStyle}
+                                key={`${linkSection.title} - ${index}`}
+                            >
+                                {linkSection.title}
+                            </a>
+                        );
+                    })} */}
+                </div>
+            </span>
+        </span>
+    );
 }

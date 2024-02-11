@@ -1,278 +1,135 @@
 .project {
-  max-width: 50vw;
-}
-.githubLinkSection {
-  display: flex;
-  flex-direction: row;
-}
-
-.githubImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 700px;
 }
 
 .imageSection {
-  width: 50vw;
-  font-size: 1vw;
-  height: 35vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  /* background-color: rgb(47, 10, 10); */
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  object-position: center;
-  align-self: center;
-  align-items: center;
-  display: flex;
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.projectText {
-  /* max-width: 25rem; */
-  font-size: 2rem;
-  width: 40vw;
-}
-
-.textSection {
-  /* margin: 5rem 0; */
-  width: 35vw;
-}
-
-.projectTitle {
-  font-size: 2.5rem;
-}
-
-.projectText {
-  box-sizing: content-box;
-  font-size: 1.2rem;
-  height: 16.5rem;
-  overflow-y: scroll;
-  width: auto;
-  /* background-color: bisque; */
-}
-.githubImage {
-  height: 4vh;
-  width: 3vw;
-}
-
-/* width */
-/* ::-webkit-scrollbar {
-  width: 10px;
-} */
-/* Track */
-/* ::-webkit-scrollbar-track {
-  background: inherit;
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  max-height: 0.5rem;
-} */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  opacity: 0.1;
-} */
-
-.imageActive {
-  width: 50vw;
-  height: 40vh;
-}
-
-.textSection {
-  height: auto;
-  width: 75%;
-  margin-left: auto;
-  /* background-color: blue; */
+.buttonStyle {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .leftArrow,
 .rightArrow {
-  font-size: 2vw;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-  min-width: 2vw;
-  height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.leftArrowDiv {
-  background-color: inherit;
-  border-radius: 5%;
-  height: 100%;
-  display: flex;
-  align-self: center;
-  margin-right: auto;
-  /* background-color: blue; */
-}
-.rightArrowDiv {
-  background-color: inherit;
-  border-radius: 5%;
-  height: 100%;
-  display: flex;
-  margin-left: auto;
-  /* background-color: blue; */
-}
-.leftArrowDiv:hover,
-.rightArrowDiv:hover {
-  background-color: rgba(38, 44, 44, 0.2);
+.textSection {
+    max-height: 300px;
 }
 
-.projectSections {
-  /* background-color: #555; */
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  height: 35vh;
-  /* align-self: center; */
+.leftArrow {
+    left: -20px;
 }
 
-.projectTab {
-  height: 25%;
-  width: 100%;
-  /* margin-top: auto; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  border-bottom: #555;
-}
-
-.projectTab:active {
-  background-color: rgb(56, 55, 55);
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.projectTabText {
-  font-size: 2.5rem;
-}
-
-.projectTab:hover {
-  background-color: rgba(38, 44, 44, 0.2);
+.rightArrow {
+    right: -20px;
 }
 
 .infoSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-}
-
-@media only screen and (max-width: 1200px) {
-  .image {
-    height: 30vh;
-  }
-  .imageSection {
-    width: 55vw;
-    font-size: 1vw;
-    height: 35vh;
-  }
-  .textSection {
-    font-size: 0.5rem;
-    width: 50vw;
-  }
-}
-
-@media only screen and (max-width: 912px) {
-  /* .image {
-    height: 25vh;
-  } */
-  .imageSection {
-    width: 95vw;
-    height: 30vh;
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  .projectSections {
-    width: 25%;
-    height: 38.1vh;
-  }
-  .projectText {
-    box-sizing: content-box;
-    font-size: 1.2rem;
-    height: 18rem;
-  }
-  .textSection {
-    font-size: 0.5rem;
-    width: 75vw;
-  }
-  /* .projectTitle {
-    font-size: 2.5rem;
-  } */
-  .infoSection {
-    width: 95vw;
-  }
-  .rightArrowDiv,
-  .leftArrowDiv,
-  .leftArrow,
-  .rightArrow {
-    width: 5vw;
-  }
+    overflow-y: scroll;
 }
 
-@media only screen and (max-width: 481px) {
-  .image {
-    height: 20vh;
-  }
-  .imageSection {
-    width: 90vw;
-    height: 25vh;
-  }
-  .projectText {
-    height: 34vh;
-  }
-  .textSection {
-    font-size: 0.5rem;
-    width: 75vw;
-    height: 38vh;
-  }
-  .projectSections {
-    width: 25%;
-  }
-  .infoSection {
-    width: 90vw;
-    /* margin: 0 auto; */
-  }
-  .rightArrowDiv,
-  .leftArrowDiv,
-  .leftArrow,
-  .rightArrow {
-    width: 5vw;
-  }
-  .projectTitle {
-    font-size: 2rem;
-  }
+.projectSections {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 320px) {
-  .imageSection {
-    width: auto;
-    height: 25vh;
-  }
-  .textSection {
-    font-size: 0.5rem;
-    width: 75%;
-  }
-  .projectSections {
-    width: 25%;
-  }
-  .infoSection {
-    width: 90vw;
-    /* margin: 0 auto; */
-  }
-  .projectTitle {
-    font-size: 1.5rem;
-  }
-  .projectText {
-    height: 35vh;
-  }
+.projectTab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.projectTab:hover {
+    background-color: #f0f0f0;
+}
+
+.projectTabText {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.githubLink {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.techStack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.techStack p {
+    margin: 0;
+    display: inline-block;
+}
+
+.techStack p:not(:last-child)::after {
+    content: ", ";
+}
+
+.techStack p:first-child::before {
+    content: "Tech: ";
 }
