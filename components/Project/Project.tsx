@@ -72,6 +72,7 @@ export default function Project({ project: projectData }: ProjectLayout) {
             </div>
             <span className={infoSection}>
                 <div className={styles.textSection}>
+                    <p> {projectData.projectTitle}</p>
                     <p className={styles.projectText}>
                         {projectData.projectText}
                     </p>

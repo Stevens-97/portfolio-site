@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; // Set the height of the banner
+    height: 500px;
     position: relative;
     width: 100%;
 }
 
 .textContainer {
-    position: absolute; // This makes sure text appears above the canvas
+    position: absolute;
     width: 100vw;
 }
 
@@ -37,14 +37,12 @@
     }
 }
 
-// Example media query for tablets
 @media (max-width: 768px) {
     .typing {
-        font-size: 1.5rem; // Smaller font size for tablets
+        font-size: 1.5rem;
     }
 }
 
-// Example media query for mobile devices
 @media (max-width: 480px) {
     .typing {
         font-size: 1.5rem;
