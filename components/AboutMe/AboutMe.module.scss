@@ -3,24 +3,29 @@
 .title {
     color: #4a90e2;
     width: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     text-align: start;
     font-size: 2.2rem;
+    display: grid;
+    grid-row: 1;
 }
 
 .text {
     color: #fff;
-    margin-bottom: 20px;
-    font-size: 1.7rem;
 }
 
+.text,
+.imageWrapper {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .imageWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .image {
@@ -37,15 +42,19 @@
 }
 
 .wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    align-items: start;
     animation: fadeIn 1s ease-in-out;
-    opacity: 0; // Start with sections invisible
-    animation-fill-mode: forwards; // Keep the state at the end of the animation
-    background-color: #272a30; /* Card background color */
-    padding: 20px; /* Inner spacing */
+    opacity: 0;
+    animation-fill-mode: forwards;
+    background-color: #272a30;
+    padding: 20px;
     margin: auto;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     height: 70%;
     max-width: 1500px;
@@ -69,6 +78,20 @@
     animation: fadeIn 1s ease-out forwards;
 }
 
+.infoSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    width: 60%;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -78,39 +101,23 @@
     }
 }
 
+@media (max-width: 768px) {
+    .text {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .wrapper {
         height: 90vh;
     }
 
     .image {
-        max-width: 60%;
+        max-width: 70%;
     }
 
-    .text {
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .typing {
-        font-size: 1.5rem; // Smaller font size for tablets
-    }
-}
-
-// Example media query for mobile devices
-@media (min-width: 1025px) {
     .infoSection {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
-
-    .text {
-        width: 60%;
+        flex-direction: column;
     }
 }
